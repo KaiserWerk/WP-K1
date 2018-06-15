@@ -1,0 +1,13 @@
+/*
+Theme Name: K1
+Theme URI: https://wordpress.org/themes/k1/
+Author: Robin Kaiser
+Author URI: https://kaiserrobin.eu/
+Description: A KaiserWerk's K1 simplistic theme with basic layout
+Version: 0.2.0
+Text Domain: k1
+*/
+
+body {
+    padding-top: 50px;
+}
