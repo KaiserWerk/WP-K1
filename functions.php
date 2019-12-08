@@ -30,5 +30,5 @@ add_action( 'after_setup_theme', 'theme_add_theme_support' );
 set_site_transient('update_themes', null);
 #set_site_transient(array('WPThemeUpdateClass', 'check_for_update'), null);
 
-require 'theme-updater.php';
-$themeUpdater = new WPThemeUpdate( 'http://wpcr.local/api/themes/', basename( get_template_directory() ) );
+require 'k1-updater.php';
+new K1Updater();
