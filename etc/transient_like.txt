@@ -1,0 +1,34 @@
+stdClass Object
+(
+    [last_checked] => 1575803538
+    [checked] => Array
+        (
+            [WP-K1] => 0.2.0
+            [cressida] => 1.1
+            [tubeaceplay] => 1.0.8
+            [twentyfifteen] => 2.4
+            [twentynineteen] => 1.4
+            [twentyseventeen] => 2.2
+            [twentysixteen] => 2.0
+            [twentytwenty] => 1.0
+        )
+
+    [response] => Array
+        (
+            [twentyfifteen] => Array
+                (
+                    [theme] => twentyfifteen
+                    [new_version] => 2.5
+                    [url] => https://wordpress.org/themes/twentyfifteen/
+                    [package] => https://downloads.wordpress.org/theme/twentyfifteen.2.5.zip
+                    [requires] => 4.1
+                    [requires_php] => 5.2.4
+                )
+
+        )
+
+    [translations] => Array
+        (
+        )
+
+)

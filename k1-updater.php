@@ -11,9 +11,11 @@ class K1Updater
         add_filter('pre_set_site_transient_update_themes', [$this, 'check_for_updates']);
     }
     
-    private function check_for_updates($transient)
+    public function check_for_updates($transient)
     {
-        if (count($transient->checked) === 0) {
+        $this->writeLog(print_r($transient, true), 'transient');
+        
+        if (empty($transient->checked)) {
             return $transient;
         }
         
@@ -27,9 +29,9 @@ class K1Updater
         }
         
         if (version_compare($plugin_info->new_version, $transient->checked[$this->slug], '>')) {
-            $transient->response = (array) $plugin_info;
+            $transient->response[$this->slug] = (array) $plugin_info;
         }
-        
+        $this->writeLog(print_r($transient, true), 'transient_modified');
         return $transient;
     }
     
