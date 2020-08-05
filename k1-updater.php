@@ -14,7 +14,7 @@ class K1Updater
     public function check_for_updates($transient)
     {
         $this->writeLog(print_r($transient, true), 'transient');
-
+        
         if (empty($transient->checked)) {
             return $transient;
         }
